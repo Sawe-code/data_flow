@@ -21,13 +21,32 @@ const BeforeAfter = () => {
               After (Clean Data)
             </h3>
 
-            <div className="font-mono text-sm space-y-2">
-              <div>name | age</div>
-              <div>John | 20</div>
-              <div>Jane | 22</div>
-              <div>Alex | 25</div>
-              <div>Sarah | 28</div>
-            </div>
+            <table className="w-full text-sm text-left border border-[rgb(var(--color-border))]">
+              <thead className="bg-[rgb(var(--color-bg))]">
+                <tr>
+                  <th className="p-2 border-b">Name</th>
+                  <th className="p-2 border-b">Age</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-2 border-b">Justin</td>
+                  <td className="p-2 border-b">20</td>
+                </tr>
+                <tr>
+                  <td className="p-2 border-b">Kai</td>
+                  <td className="p-2 border-b">22</td>
+                </tr>
+                <tr>
+                  <td className="p-2 border-b">Faith</td>
+                  <td className="p-2 border-b">25</td>
+                </tr>
+                <tr>
+                  <td className="p-2">Brenda</td>
+                  <td className="p-2">28</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div
@@ -38,13 +57,32 @@ const BeforeAfter = () => {
               Before (Messy Data)
             </h3>
 
-            <div className="font-mono text-sm space-y-2">
-              <div>name age</div>
-              <div>john 20</div>
-              <div>JOHN 20</div>
-              <div>null 22</div>
-              <div> jane 22</div>
-            </div>
+            <table className="w-full text-sm text-left border border-red-300">
+              <thead>
+                <tr>
+                  <th className="p-2 border-b">name</th>
+                  <th className="p-2 border-b">age</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-2 border-b">justin</td>
+                  <td className="p-2 border-b">20</td>
+                </tr>
+                <tr>
+                  <td className="p-2 border-b">JUSTIN</td>
+                  <td className="p-2 border-b">20</td>
+                </tr>
+                <tr>
+                  <td className="p-2 border-b text-red-400">null</td>
+                  <td className="p-2 border-b">22</td>
+                </tr>
+                <tr>
+                  <td className="p-2"> kai</td>
+                  <td className="p-2">22</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div

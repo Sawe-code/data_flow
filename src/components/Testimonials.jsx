@@ -2,19 +2,19 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Alex Johnson",
+    name: "Faith Sawe",
     role: "Data Analyst",
     message:
       "DataFlow cleaned my messy Excel files in seconds. What used to take hours now takes minutes.",
   },
   {
-    name: "Sarah Kim",
+    name: "Brian Cheruiyot",
     role: "Startup Founder",
     message:
       "The before-and-after visualization is incredible. It makes data transformation so easy to understand.",
   },
   {
-    name: "Michael Brown",
+    name: "Michael Wanyonyi",
     role: "Student",
     message:
       "I use DataFlow for my projects and it saves me so much time. Super intuitive and powerful.",
