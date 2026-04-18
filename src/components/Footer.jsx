@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[rgb(var(--color-bg-secondary))] border-t border-[rgb(var(--color-border))]">
+    <footer className="bg-[rgb(var(--color-bg-secondary))] border-t border-[rgb(var(--color-border))] w-full">
       <div className="container-custom py-12 grid gap-10 md:grid-cols-4">
         
         <div>

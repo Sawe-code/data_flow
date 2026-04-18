@@ -199,6 +199,15 @@
     width: 100%;
   }
 
+  .nav-link.active {
+    color: rgb(var(--color-primary));
+    font-weight: 600;
+  }
+
+  .nav-link.active::after {
+    width: 100%;
+  }
+
   .flex-center {
     @apply flex items-center justify-center;
   }

@@ -5,7 +5,7 @@ const CTA = () => {
     <section className="section">
       <div className="container-custom">
         <div className="rounded-2xl p-8 md:p-12 text-center bg-[rgb(var(--color-primary))] text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20 blur-3xl bg-gradient-to-r from-cyan-400 to-indigo-500"></div>
+          <div className="absolute inset-0 opacity-20 blur-3xl bg-gradient-to-r from-[rgb(var(--color-primary-light))] to-[rgb(var(--color-primary-dark))]"></div>
 
           <div className="relative z-10">
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -18,11 +18,11 @@ const CTA = () => {
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="btn bg-white text-black hover:opacity-90">
+              <button className="btn bg-white text-black font-semibold hover:scale-105 transition">
                 Get Started
               </button>
 
-              <button className="btn border border-white text-white hover:bg-white hover:text-black">
+              <button className="btn border border-white/70 text-white hover:bg-white hover:text-black transition">
                 Live Demo
               </button>
             </div>

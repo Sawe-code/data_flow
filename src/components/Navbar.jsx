@@ -15,15 +15,24 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Features", path: "/features" },
-    { name: "How It Works", path: "/how-it-works" },
+    { name: "Dashboard", path: "/dashboard" },
     { name: "Pricing", path: "/pricing" },
+    { name: "Login", path: "/login" },
+    { name: "Signup", path: "/signup" },
   ];
 
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 dark:bg-[#020617]/70 border-b border-gray-200 dark:border-gray-800">
       <div className="container-custom flex items-center justify-between h-16">
-        <h1 className="text-xl font-bold text-gradient">DataFlow</h1>
+        <div className="flex items-center gap-2 group">
+          <img
+            src="/icons/dataflow.png"
+            alt="DataFlow"
+            className="h-10 w-10 transition group-hover:scale-110 rounded-md"
+          />
+
+          <span className="text-xl font-bold text-gradient">DataFlow</span>
+        </div>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -31,15 +40,7 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `relative text-sm transition ${
-                  isActive
-                    ? "text-[var(--color-primary)] font-medium"
-                    : "text-muted hover:text-black dark:hover:text-white"
-                }
-                after:content-[''] after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:w-0 after:bg-[var(--color-primary)]
-                after:transition-all after:duration-300
-                hover:after:w-full`
+                `nav-link ${isActive ? "active text-[rgb(var(--color-primary))]" : ""}`
               }
             >
               {link.name}
@@ -76,7 +77,9 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="text-base text-muted dark:text-gray-300"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active" : ""}`
+              }
             >
               {link.name}
             </NavLink>

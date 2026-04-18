@@ -5,8 +5,8 @@ const Hero = () => {
     <section className="relative overflow-hidden pt-32 pb-24">
       <div className="absolute inset-0 -z-20 hero-gradient"></div>
 
-      <div className="absolute top-10 left-10 w-72 h-72 bg-purple-300 rounded-full blur-3xl opacity-30 -z-10"></div>
-      <div className="absolute bottom-10 right-10 w-72 h-72 bg-cyan-300 rounded-full blur-3xl opacity-30 -z-10"></div>
+      {/* <div className="absolute top-10 left-10 w-72 h-72 bg-purple-300 rounded-full blur-3xl opacity-30 -z-10"></div>
+      <div className="absolute bottom-10 right-10 w-72 h-72 bg-cyan-300 rounded-full blur-3xl opacity-30 -z-10"></div> */}
 
       <div className="container-custom grid md:grid-cols-2 gap-16 items-center">
         <div>
@@ -16,8 +16,8 @@ const Hero = () => {
           </h1>
 
           <p className="mt-6 max-w-lg text-base md:text-lg">
-            Connect any data source, clean it automatically, and visualize
-            everything in beautiful dashboards built for modern teams.
+            Upload CSV, Excel, or connect APIs. Automatically remove duplicates,
+            fix formatting, and generate charts with actionable insights.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -41,7 +41,7 @@ const Hero = () => {
 
             <div className="space-y-4">
               <div className="h-24 rounded-md bg-[rgb(var(--color-bg-secondary))] flex items-center justify-center text-sm">
-                Chart Preview
+                Revenue Trend (Last 30 Days)
               </div>
 
               <div className="flex gap-3">

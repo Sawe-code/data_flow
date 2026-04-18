@@ -1,25 +1,31 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import Features from './pages/Features'
-import HowItWorks from './pages/HowItWorks'
-import Pricing from './pages/Pricing'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import PublicLayout from "./layouts/PublicLayout";
+import DashboardLayout from "./layouts/DashboardLayout";
+
+import Home from "./pages/Home";
+import Pricing from "./pages/Pricing";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const App = () => {
   return (
-    <main className='min-h-screen '>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/features' element={<Features />} />
-        <Route path='/how-it-works' element={<HowItWorks />} />
-        <Route path='/pricing' element={<Pricing />} />
-      </Routes>
-      <Footer />
-    </main>
-  )
-}
+    <Routes>
 
-export default App
+      
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Route>
+
+      
+      <Route path="/dashboard" element={<DashboardLayout />} />
+
+    </Routes>
+  );
+};
+
+export default App;
